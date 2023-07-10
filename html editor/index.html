@@ -2,19 +2,25 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=1920, height=1080, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
     <title>HTML live code editor</title>
     <link rel="icon" href="icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="master.css">
     <script src="master.js"></script>
 </head>
+
 <body background="bgimage.jfif">
 
     <div class="main">
         <button id="copy" onclick="coopy()">Copy</button>
         <img src="imgscrl.jpg" alt="scrlforcss" height="50px" width="45px" id="cssscrl" onclick="jutsu()"
-            onmouseover="rvrsejutsu()">
+            onmousedown="rvrsejutsu()">
         <div class="container">
-            <textarea id="editor" onkeyup="refresh()" placeholder="HTML code goes here...." onfocus="this.select()"></textarea>
+            <textarea id="editor" onkeyup="refresh()" placeholder="HTML code goes here...."
+                onfocus="this.select()"></textarea>
             <textarea id="css" placeholder="This Is To Take Note...Or Just Do some Rough Work"></textarea>
             <!-- <div class="load">Welcome<div class="loader">Lets  Code</div></div> -->
             <iframe id="viewer"></iframe>
@@ -24,4 +30,5 @@
     </div><br>
 
 </body>
+
 </html>
