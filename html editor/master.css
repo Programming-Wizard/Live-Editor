@@ -1,0 +1,218 @@
+html,body {
+    margin: 0px;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+#editor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 701px;
+    width: 703px;
+    resize: none;
+    font-size: x-large;
+    font-family: cursive;
+    border-radius: .3cm;
+    color: black;
+    border-color: black;
+    border-width: 3px;
+    position: absolute;
+    bottom: 1%;
+    left: -200em;
+    animation-name: leftin;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+
+
+@keyframes leftin {
+    0% {
+        left: -200em;
+    }
+
+    100% {
+        left: 20px;
+    }
+}
+
+#css {
+    display: block;
+    align-items: center;
+    height: 701px;
+    width: 703px;
+    z-index: 99;
+    resize: none;
+    font-size: x-large;
+    font-family: Helvetica;
+    border-radius: .3cm;
+    color: black;
+    border-color: black;
+    border-width: 3px;
+    position: relative;
+    bottom: -4px;
+    left: -715px;
+}
+
+
+iframe {
+    height: 707px;
+    width: 745px;
+    background-color: rgb(201, 248, 248);
+    margin-right: 0px;
+    margin-left: 45px;
+    position: absolute;
+    bottom: 1%;
+    right: -200em;
+    animation-name: rightin;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes rightin {
+    0% {
+        right: -200em;
+    }
+
+    100% {
+        right: 35px;
+    }
+}
+
+.container {
+    display: flex;
+    align-content: center;
+    max-width: 100em;
+
+}
+
+/* .load{
+display: flex;
+margin-left: -100px;
+z-index: 99999;
+justify-content: center;
+align-items: center;
+background:rgb(25, 77, 173);
+color: cyan;
+overflow: hidden;
+height: 725px;
+width:525em ;
+bottom: 150px;
+animation-name: loading;
+animation-duration: 6s;
+animation-fill-mode: forwards;
+animation-timing-function: ease-in-out;
+animation-delay: 1s;
+font-size: xxx-large;
+;
+
+}
+@keyframes loading{
+0%{
+    opacity: 100%;
+    color: rgb(255, 219, 255);
+  }
+100%
+{
+    opacity: 0%;    
+    z-index: -5;
+    visibility: hidden;
+}
+}
+.loader{
+border: 20px solid whitesmoke;
+border-style: dotted;
+border-radius: 50%;
+width: 120px;
+height: 120px;
+animation: spin 2s linear 2; 
+animation-iteration-count: 2;
+}
+
+@keyframes spin{
+0%{
+    transform:rotate(0deg);
+}
+100%
+{
+    transform:rotate(360deg);
+}
+} */
+
+#button {
+
+    position: absolute;
+    left: 275px;
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 9;
+    margin: -150px;
+    top: 0px;
+    margin-left: 15em;
+    padding: 15px;
+    font-size: 20px;
+    animation-name: button;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    cursor: cell;
+}
+
+@keyframes button {
+    0% {
+        top: 0px;
+    }
+
+    100% {
+        top: 773px;
+    }
+}
+
+#cssscrl {
+    position: absolute;
+    z-index: 9;
+    top: 85px;
+    left: 0px;
+    animation-name: scrl;
+    display: block;
+    animation-duration: 2s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes scrl {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+#copy{
+    position:absolute;
+    z-index: 99;
+    left: 675px;
+    top: 15px;
+    opacity: 0%;
+    border-radius: 10px;
+    animation-name :copy;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    cursor:pointer;
+    }
+    @keyframes copy{
+        0%{
+            opacity:0%;
+        }
+        100%{
+            opacity: 80%;
+        }
+    }

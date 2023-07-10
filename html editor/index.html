@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML live code editor</title>
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="master.css">
+    <script src="master.js"></script>
+</head>
+<body background="bgimage.jfif">
+
+    <div class="main">
+        <button id="copy" onclick="coopy()">Copy</button>
+        <img src="imgscrl.jpg" alt="scrlforcss" height="50px" width="45px" id="cssscrl" onclick="jutsu()"
+            onmouseover="rvrsejutsu()">
+        <div class="container">
+            <textarea id="editor" onkeyup="refresh()" placeholder="HTML code goes here...." onfocus="this.select()"></textarea>
+            <textarea id="css" placeholder="This Is To Take Note...Or Just Do some Rough Work"></textarea>
+            <!-- <div class="load">Welcome<div class="loader">Lets  Code</div></div> -->
+            <iframe id="viewer"></iframe>
+        </div>
+    </div>
+    <div><button onclick="emmet()" id="button" ondblclick="hide()">Get Template<br><sub>dbleclick to hide</sub></button>
+    </div><br>
+
+</body>
+</html>
