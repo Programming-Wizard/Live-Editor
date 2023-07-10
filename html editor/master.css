@@ -1,30 +1,56 @@
-html,body {
-    margin: 0px;
+html,
+body {
+    margin: 0%;
     height: 100%;
     overflow: hidden;
 
+}
+
+@media (max-width: 156.6mm) and (max-height: 75.2mm) {
+    /* Styles for smaller screens */
+
+    #editor {
+        width: 50%;
+        /* Add other styles specific to smaller screens */
+    }
+
+    #css {
+        width: 100%;
+        /* Add other styles specific to smaller screens */
+    }
+
+    iframe {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        /* Add other styles specific to smaller screens */
+    }
+
+
+
+    /* Add any additional styles specific to smaller screens */
 }
 
 #editor {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 701px;
-    width: 703px;
+    height: 97%;
+    width: 47%;
     resize: none;
     font-size: x-large;
     font-family: cursive;
-    border-radius: .3cm;
+    border-radius: 1.6%;
     color: black;
     border-color: black;
-    border-width: 3px;
+    border-width: 0.13rem;
     position: absolute;
     bottom: 1%;
     left: -200em;
     animation-name: leftin;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    animation-delay: 1.5s;
+    animation-delay: 0.5s;
 }
 
 
@@ -34,42 +60,42 @@ html,body {
     }
 
     100% {
-        left: 20px;
+        left: 1.5rem;
     }
 }
 
 #css {
     display: block;
     align-items: center;
-    height: 701px;
-    width: 703px;
+    height: 29.3em;
+    width: 47%;
     z-index: 99;
     resize: none;
     font-size: x-large;
     font-family: Helvetica;
-    border-radius: .3cm;
+    border-radius: 1.6%;
     color: black;
     border-color: black;
-    border-width: 3px;
+    border-width: 0.13rem;
     position: relative;
-    bottom: -4px;
-    left: -715px;
+    bottom: -0.5rem;
+    left: -44.6875rem;
 }
 
 
 iframe {
-    height: 707px;
-    width: 745px;
+    height: 97.6%;
+    width: 48%;
     background-color: rgb(201, 248, 248);
-    margin-right: 0px;
-    margin-left: 45px;
+    margin-right: 0rem;
+    margin-left: 2.8125rem;
     position: absolute;
     bottom: 1%;
     right: -200em;
     animation-name: rightin;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    animation-delay: 1.5s;
+    animation-delay: 0.5s;
 }
 
 @keyframes rightin {
@@ -78,7 +104,7 @@ iframe {
     }
 
     100% {
-        right: 35px;
+        right: 2.1875rem;
     }
 }
 
@@ -145,15 +171,15 @@ animation-iteration-count: 2;
 #button {
 
     position: absolute;
-    left: 275px;
-    border-radius: 15px;
+    left: 36rem;
+    border-radius: 3.0375rem;
     overflow: hidden;
     z-index: 9;
-    margin: -150px;
-    top: 0px;
-    margin-left: 15em;
-    padding: 15px;
-    font-size: 20px;
+    margin: -9.375rem;
+    top: 0rem;
+    margin-left: 0.9375rem;
+    padding: 0.9375rem;
+    font-size: 1.25rem;
     animation-name: button;
     animation-duration: 1s;
     animation-delay: 4s;
@@ -163,19 +189,19 @@ animation-iteration-count: 2;
 
 @keyframes button {
     0% {
-        top: 0px;
+        top: 0rem;
     }
 
     100% {
-        top: 773px;
+        top: 48.3125rem;
     }
 }
 
 #cssscrl {
     position: absolute;
     z-index: 9;
-    top: 85px;
-    left: 0px;
+    top: 5.3125rem;
+    left: 0rem;
     animation-name: scrl;
     display: block;
     animation-duration: 2s;
@@ -195,24 +221,26 @@ animation-iteration-count: 2;
     }
 }
 
-#copy{
-    position:absolute;
+#copy {
+    position: absolute;
     z-index: 99;
-    left: 675px;
-    top: 15px;
+    left: 43.1875rem;
+    top: 0.9375rem;
     opacity: 0%;
-    border-radius: 10px;
-    animation-name :copy;
+    border-radius: 1.025rem;
+    animation-name: copy;
     animation-duration: 1s;
     animation-delay: 5s;
     animation-fill-mode: forwards;
-    cursor:pointer;
+    cursor: pointer;
+}
+
+@keyframes copy {
+    0% {
+        opacity: 0%;
     }
-    @keyframes copy{
-        0%{
-            opacity:0%;
-        }
-        100%{
-            opacity: 80%;
-        }
+
+    100% {
+        opacity: 60%;
     }
+}
