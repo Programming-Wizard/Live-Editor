@@ -1,0 +1,246 @@
+html,
+body {
+    margin: 0%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+@media (max-width: 156.6mm) and (max-height: 75.2mm) {
+    /* Styles for smaller screens */
+
+    #editor {
+        width: 50%;
+        /* Add other styles specific to smaller screens */
+    }
+
+    #css {
+        width: 100%;
+        /* Add other styles specific to smaller screens */
+    }
+
+    iframe {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        /* Add other styles specific to smaller screens */
+    }
+
+
+
+    /* Add any additional styles specific to smaller screens */
+}
+
+#editor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 97%;
+    width: 47%;
+    resize: none;
+    font-size: x-large;
+    font-family: cursive;
+    border-radius: 1.6%;
+    color: black;
+    border-color: black;
+    border-width: 0.13rem;
+    position: absolute;
+    bottom: 1%;
+    left: -200em;
+    animation-name: leftin;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+
+@keyframes leftin {
+    0% {
+        left: -200em;
+    }
+
+    100% {
+        left: 1.5rem;
+    }
+}
+
+#css {
+    display: block;
+    align-items: center;
+    height: 29.3em;
+    width: 47%;
+    z-index: 99;
+    resize: none;
+    font-size: x-large;
+    font-family: Helvetica;
+    border-radius: 1.6%;
+    color: black;
+    border-color: black;
+    border-width: 0.13rem;
+    position: relative;
+    bottom: -0.5rem;
+    left: -44.6875rem;
+}
+
+
+iframe {
+    height: 97.6%;
+    width: 48%;
+    background-color: rgb(201, 248, 248);
+    margin-right: 0rem;
+    margin-left: 2.8125rem;
+    position: absolute;
+    bottom: 1%;
+    right: -200em;
+    animation-name: rightin;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes rightin {
+    0% {
+        right: -200em;
+    }
+
+    100% {
+        right: 2.1875rem;
+    }
+}
+
+.container {
+    display: flex;
+    align-content: center;
+    max-width: 100em;
+
+}
+
+/* .load{
+display: flex;
+margin-left: -100px;
+z-index: 99999;
+justify-content: center;
+align-items: center;
+background:rgb(25, 77, 173);
+color: cyan;
+overflow: hidden;
+height: 725px;
+width:525em ;
+bottom: 150px;
+animation-name: loading;
+animation-duration: 6s;
+animation-fill-mode: forwards;
+animation-timing-function: ease-in-out;
+animation-delay: 1s;
+font-size: xxx-large;
+;
+
+}
+@keyframes loading{
+0%{
+    opacity: 100%;
+    color: rgb(255, 219, 255);
+  }
+100%
+{
+    opacity: 0%;    
+    z-index: -5;
+    visibility: hidden;
+}
+}
+.loader{
+border: 20px solid whitesmoke;
+border-style: dotted;
+border-radius: 50%;
+width: 120px;
+height: 120px;
+animation: spin 2s linear 2; 
+animation-iteration-count: 2;
+}
+
+@keyframes spin{
+0%{
+    transform:rotate(0deg);
+}
+100%
+{
+    transform:rotate(360deg);
+}
+} */
+
+#button {
+
+    position: absolute;
+    left: 36rem;
+    border-radius: 3.0375rem;
+    overflow: hidden;
+    z-index: 9;
+    margin: -9.375rem;
+    top: 0rem;
+    margin-left: 0.9375rem;
+    padding: 0.9375rem;
+    font-size: 1.25rem;
+    animation-name: button;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    cursor: cell;
+}
+
+@keyframes button {
+    0% {
+        top: 0rem;
+    }
+
+    100% {
+        top: 48.3125rem;
+    }
+}
+
+#cssscrl {
+    position: absolute;
+    z-index: 9;
+    top: 5.3125rem;
+    left: 0rem;
+    animation-name: scrl;
+    display: block;
+    animation-duration: 2s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes scrl {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+#copy {
+    position: absolute;
+    z-index: 99;
+    left: 43.1875rem;
+    top: 0.9375rem;
+    opacity: 0%;
+    border-radius: 1.025rem;
+    animation-name: copy;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+@keyframes copy {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 60%;
+    }
+}
